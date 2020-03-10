@@ -6,8 +6,8 @@ install:
   - poetry install
 
 script:
-  - poetry run mypy fastapi_security_typeform
-  - poetry run black --check fastapi_security_typeform
+  - poetry run mypy fastapi_security_telegram_webhook
+  - poetry run black --check fastapi_security_telegram_webhook
   - poetry build
 
 deploy:
