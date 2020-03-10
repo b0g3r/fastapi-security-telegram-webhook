@@ -1,0 +1,17 @@
+language: python
+python: 3.7
+
+install:
+  - pip install poetry>=1.0.0
+  - poetry install
+
+script:
+  - poetry run mypy fastapi_security_typeform
+  - poetry run black --check fastapi_security_typeform
+  - poetry build
+
+deploy:
+  - provider: script
+    script: poetry publish --username $PYPI_USERNAME --password $PYPI_PASSWORD --build
+    on:
+      tags: true

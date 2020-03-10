@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "fastapi-security-telegram-webhook"
+version = "0.1.0"
+description = ""
+authors = ["Dima Boger <kotvberloge@gmail.com>"]
+license = "MIT"
+readme = 'README.md'
+repository = "https://github.com/piterpy-meetup/fastapi-security-telegram-webhook"
+homepage = "https://github.com/piterpy-meetup/fastapi-security-telegram-webhook"
+keywords = ['fastapi', 'fastapi security', 'telegram', 'telegram webhook', 'bot webhook']
+include = ["fastapi_security_telegram_webhook/py.typed"]
+
+[tool.poetry.dependencies]
+python = ">=3.6"
+fastapi = "*"
+
+[tool.poetry.dev-dependencies]
+black = "^19.10b0"
+mypy = "^0.761"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
