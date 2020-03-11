@@ -20,6 +20,7 @@ from starlette.requests import Request
 DEFAULT_NETWORKS = [IPv4Network("149.154.160.0/20"), IPv4Network("91.108.4.0/22")]
 SECRET_PATH_PARAM = Path(
     ...,
+    alias="secret",
     description="Secret token, should be placed as `{secret}` in path operation function",
 )
 
