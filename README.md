@@ -12,7 +12,7 @@ for a bot developer.
 
 Thence, for securing your webhook you have only two option:
  - Allow requests only from Telegram subnets. 
- [Telegram assures](https://core.telegram.org/bots/webhooks#the-short-version) that they won't change.
+ [The are fixed in documentation](https://core.telegram.org/bots/webhooks#the-short-version), but may change in future.
  - Use secret value in endpoint address, e.g. `/telegram-webhook/468e95826f224a60a4e9355ab76e0875`. It will
   complicate the brute force attack and you can easily change it if the value was compromised.
 
